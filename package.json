@@ -1,9 +1,9 @@
 {
-  "name": "locofy-react-gatsby-project",
+  "name": "density-exchange",
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "author": "",
+  "author": "mayank",
   "keywords": [
     "gatsby"
   ],
@@ -13,11 +13,13 @@
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "cross-env NODE_ENV=development gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
